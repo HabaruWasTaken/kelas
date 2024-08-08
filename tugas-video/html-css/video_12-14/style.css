@@ -3,7 +3,38 @@
     padding: 0;
 }
 
-.row-1 {
+.row {
+    background-color: pink;
+    max-width: 1000px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    width: 150px;
+    height: 150px;
+}
+
+.satu {
+    background-color: crimson;
+}
+
+.dua {
+    background-color: peru;
+}
+
+.tiga {
+    background-color: burlywood;
+}
+
+.empat {
+    background-color: khaki;
+}
+/* .row-1 {
     background-color: purple;
 }
 
@@ -15,4 +46,4 @@
 
 .col-2 {
     background-color: blue;
-}
+} */
