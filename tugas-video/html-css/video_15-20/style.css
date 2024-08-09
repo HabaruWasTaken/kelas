@@ -162,8 +162,10 @@
 }
 
 .display {
-    margin-top: 60px;
+    margin-top: 30px;
+    padding-top: 30px;
     text-align: center;
+    width: 100%;
 }
 
 .display .display-content {
@@ -183,6 +185,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 }
 
 .produk .image img {
@@ -206,28 +209,34 @@
 }
 
 @media screen and (min-width: 560px) {
-      .produk {
-        width: 100%;
-        flex-direction: row;
-        align-items: start;
-        justify-content: space-around;
-      }
 
-      .produk-content {
-        width: calc(30% - 50px);
-        border: 3px solid black;
-        border-radius: 20px;
-        box-shadow: 0 0 10px black;
-      }
+    .display {
+        background-color: rgb(76, 168, 255);
+    }
 
-      .display-content h2 {
-        font-size: 40px;
-        margin-bottom: 30px;
-      }
+    .produk {
+    width: 100%;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+    background-color: rgb(76, 168, 255);
+    }
 
-      .produk-content .image img {
-        border-radius: 15px 15px 0 0;
-      }
+    .produk-content {
+    width: calc(30% - 50px);
+    border: 3px solid black;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+    }
+
+    .display-content h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    }
+
+    .produk-content .image img {
+    border-radius: 15px 15px 0 0;
+    }
 }
 
 .info {
@@ -285,4 +294,70 @@
     .info-content .info-desc h2  {
         font-size: 20px;
     }
+}
+
+.medsos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.card {
+    width: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    box-shadow: 0 0 10px black;
+}
+
+.medsos-isi {
+    font-size: 16px;
+}
+
+.medsos-form {
+    display: flex;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.medsos-form form {
+    display: flex;
+    width: 100%;
+}
+
+.medsos-form form input {
+    align-items: center;
+    padding: 8px 0 8px 8px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid black;
+    border-right: none;
+    font-size: 10px;
+    background-color: rgb(160, 209, 255);
+}
+
+.medsos-form form input::placeholder {
+    color: black;
+}
+
+.medsos-form button {
+    align-items: center;
+    padding: 8px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(160, 209, 255);
+    border-radius: 0 5px 5px 0;
+    display: inline-block;
+}
+
+.medsos-icon {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.medsos-icon i {
+    font-size: 40px;
 }
